@@ -1,30 +1,45 @@
-h1{
-  font-family: Oak,sans-serif;
-  color: rgba(0,0,0,0.7);
-  position:relative;
-  top:calc(50% - 80px);
-  left:calc(50% - 130px);
-}
-.bigbrand{
-  font-size: 1.5em
-}
-.centerstage{
-  margin-left:auto;
-  margin-right:auto
-}
-
 .techfont{
-    font-family: 'Roboto',sans-serif;
-    font-size: 1.5em;
-    margin-bottom:10px;
-
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
-.loader {
-  position:fixed;
-  filter:hue-rotate(0deg);
-  color:linear-gradient(45deg,#0f8,#08f);
-  animation:hue 10000ms infinite linear;
 
+.postdate{
+  text-align: center;
+}
+
+.posttitle{
+  font-family: 'Russo One', sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+.postcontent{
+  font-family: 'Montserrat';
+  font-size: 1.5em;
+}
+
+.centerstage{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-comment{
+  position: absolute;
+  right: 0px;
+}
+
+.bigbrand{
+  font-size: 1.5em;
+}
+
+
+/*COLOR CHANGER*/
+/*Credit and Source: http://codepen.io/thapliyalshivam/pen/dvgXVO*/
+.loader{
+  filter:hue-rotate(0deg);
+  color: linear-gradient(45deg,#0f8,#08f);
+  animation:hue 5000ms infinite linear;
 }
 
 @keyframes spinify {
