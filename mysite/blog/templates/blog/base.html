@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="{% static 'css/blog.css' %}">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
-  <body>
+  <body class='loader'>
 <nav class="navbar navbar-default techfont custom-navbar">
 
   <div class="container">
@@ -20,8 +20,8 @@
     <ul class="nav navbar-nav" >
 
 
-    <li> <a class="navbar-brand bigbrand " href="{% url post_list %}" ></a> My Blog </li>
-    <li> <a href="{% url  'about' %}"></a> </li>
+    <li> <a class="navbar-brand bigbrand " href="{% url 'blog:post_list' %}" ></a> My Blog </li>
+    <li> <a href="{% url  'blog:about' %}"> About</a> </li>
 
 
 
@@ -39,7 +39,7 @@
       {% else %}
       <li> <a class ='nav navbar-right ' href="{% url 'login' %}"> <span class="glyphicon glyphicon-user"></span> </a> </li>
 
-      {% endif 5}
+      {% endif %}
 
     </ul>
   </div>
