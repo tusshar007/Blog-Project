@@ -20,7 +20,7 @@
     <ul class="nav navbar-nav" >
 
 
-    <li> <a class="navbar-brand bigbrand " href="{% url 'blog:post_list' %}" > My Blog </a></li>  
+    <li> <a class="navbar-brand bigbrand " href="{% url 'blog:post_list' %}" > My Blog </a></li>
     <li> <a href="{% url  'blog:about' %}"> About</a> </li>
 
 
@@ -30,8 +30,8 @@
     <ul class="nav navbar-nav navbar-right">
       {% if user.is_authenticated %}
 
-      <li> <a href="{% url 'post_new' %}"> New Post</a> </li>
-      <li> <a href="{% url 'post_draft' %}"> New Draft</a> </li>
+      <li> <a href="{% url 'blog:post_new' %}"> New Post</a> </li>
+      <li> <a href="{% url 'blog:post_draft_list' %}"> New Draft</a> </li>
       <li> <a href="{% url 'logout' %}"> Logout!</a> </li>
       <li>
         <a> Welcome {{ user.username }}</a>
